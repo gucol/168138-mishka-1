@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Любовь Гулько](https://up.htmlacademy.ru/adaptive/12/user/168138).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Белов](https://htmlacademy.ru/profile/id96038).
 
 ---
 
