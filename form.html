@@ -63,6 +63,29 @@
           <input class="form-order__checkbox" type="checkbox" name="orange" id="orange-check">
           <label for="orange-check" class="form-order__label">Оранжевый</label>
         </fieldset>
+
+        <fieldset class="form-order__container">
+          <legend class="form-order__legend">ФИО</legend>
+
+          <label for="name-field" class="form-order__label">Имя:</label>
+          <input class="form-order__field" type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
+
+          <label for="surname-field" class="form-order__label">Фамилия:</label>
+          <input class="form-order__field" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*" required>
+
+          <label for="patronymic-field" class="form-order__label">Отчество:</label>
+          <input class="form-order__field" type="text" name="patronymic" id="patronymic-field" placeholder="Отчество, если желаете">
+        </fieldset>
+
+        <fieldset class="form-order__container">
+          <legend class="form-order__legend">Тел</legend>
+          <input class="form-order__tel" type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
+        </fieldset>
+
+        <fieldset class="form-order__container">
+          <legend class="form-order__legend">E-mail</legend>
+          <input class="form-order__email" type="email" name="email" placeholder="Ваш Email*" required>
+        </fieldset>
       </form>
     </main>
 
