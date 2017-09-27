@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <h1 class="visually-hidden">Магазин милых штук "Мишка": главная страница</h1>
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="http://placehold.it/95x35" alt="Логотип магазина Mishka">
+      </a>
+
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item"><a>Вязание на заказ</a></li>
+          <li class="main-nav__item">
+            <form class="search" action="https://echo.htmlacademy.ru/" method="get">
+              <input class="search__input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+              <button type="submit" class="search__btn">Найти</button>
+            </form>
+          </li>
+          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <footer class="page-footer">
+      <section class="social-links">
+        <h2 class="social-links__title visually-hidden">Мы есть в социальных сетях:</h2>
+        <a href="#" class="social-link social-link--inst">instagram</a>
+        <a href="#" class="social-link social-link--fb">facebook</a>
+        <a href="#" class="social-link social-link--tw">twitter</a>
+      </section>
+      <div class="develop">
+        <p class="develop__text">Разработано <a href="https://htmlacademy.ru/" class="develop__link">в HTML Academy</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
