@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="http://placehold.it/95x35" alt="Логотип магазина Mishka">
+      </a>
+
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a>Каталог товаров</a>
+          </li>
+          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item">
+            <form class="search" action="https://echo.htmlacademy.ru/" method="get">
+              <input class="search__input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+              <button type="submit" class="search__btn">Найти</button>
+            </form>
+          </li>
+          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="products">
+        <h1 class="products__title">Каталог товаров</h1>
+        <article class="product">
+          <a href="#" class="product__img"><img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик"></a>
+          <a href="#" class="product__title"><h2>Зайчик-попрыгайчик</h2></a>
+          <span class="product__desc">Рост 30 см, вес 200 г</span>
+          <span class="product__price">1 200 руб.</span>
+          <button class="product__buy">Купить</button>
+        </article>
+
+        <article class="product">
+          <a href="#" class="product__img"><img src="http://placehold.it/260x195" alt=""></a>
+          <a href="#" class="product__title"><h2>Корзинка для белья</h2></a>
+          <span class="product__desc">Диаметр 15 см, высота 10 см</span>
+          <span class="product__price">690 руб.</span>
+          <button class="product__buy">Купить</button>
+        </article>
+
+        <article class="product">
+          <a href="#" class="product__img"><img src="http://placehold.it/260x195" alt=""></a>
+          <a href="#" class="product__title"><h2>Большая корзинка для игрушек</h2></a>
+          <span class="product__desc">Диаметр 30 см, высота 30 см</span>
+          <span class="product__price">1 500 руб.</span>
+          <button class="product__buy">Купить</button>
+        </article>
+
+      </section>
+
+      <section class="video">
+        <h2 class="video__title">Процесс производства</h2>
+        <video class="video__box"></video>
+        <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      </section>
+
+      <a href="#" class="btn">Сделать заказ</a>
+    </main>
+
+    <footer class="page-footer">
+      <section class="social-links">
+        <h2 class="social-links__title visually-hidden">Мы есть в социальных сетях:</h2>
+        <a href="#" class="social-link social-link--inst">instagram</a>
+        <a href="#" class="social-link social-link--fb">facebook</a>
+        <a href="#" class="social-link social-link--tw">twitter</a>
+      </section>
+      <div class="develop">
+        <p class="develop__text">Разработано <a href="https://htmlacademy.ru/intensive/adaptive" class="develop__link">в HTML Academy</a></p>
+      </div>
+    </footer>
+
+    <div class="popup popup--closed">
+      <h2 class="popup__title">Добавить в корзину</h2>
+      <p class="popup__text">Выберите размер:</p>
+      <form class="popup__form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="popup__label"><input class="popup__input" type="radio" name="size" value="s" checked>S</label>
+        <label class="popup__label"><input class="popup__input" type="radio" name="size" value="m">M</label>
+        <label class="popup__label"><input class="popup__input" type="radio" name="size" value="l">L</label>
+
+        <input  class="popup__btn" type="submit" name="popup" value="Добавить">
+      </form>
+    </div>
+  </body>
+</html>

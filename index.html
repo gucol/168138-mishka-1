@@ -4,9 +4,122 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
   </head>
-  <body>
+  <body class="page">
+    <header class="page-header">
+      <h1 class="visually-hidden">Магазин милых штук "Мишка": главная страница</h1>
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/95x35" alt="Логотип магазина Mishka">
+      </a>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item">
+            <form class="search" action="https://echo.htmlacademy.ru/" method="get">
+              <input class="search__input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+              <button type="submit" class="search__btn">Найти</button>
+            </form>
+          </li>
+          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
 
+      <h2 class="page-header__title">Милые штуки ручной работы для дома</h2>
+      <a class="page-header__link page-header__link--decor" href="#">Предметы интерьера</a>
+      <a class="page-header__link page-header__link--toys" href="#">Детские игрушки</a>
+    </header>
+
+    <main class="page-main">
+      <section class="weekly-leader">
+        <h2 class="weekly-leader__title">Вязаные корзинки</h2>
+        <span class="weekly-leader__subtitle">Товар недели</span>
+        <p class="weekly-leader__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="weekly-leader__table">
+          <tr>
+            <td>Цвет:</td>
+            <td>«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td>Диаметр:</td>
+            <td>25 см</td>
+          </tr>
+          <tr>
+            <td>Высота:</td>
+            <td>15 см</td>
+          </tr>
+        </table>
+        <img class="weekly-leader__img" src="http://placehold.it/260x315" alt="Фотография вязаных корзинок">
+        <span class="weekly-leader__price">Цена: 990 руб.</span>
+        <button class="btn">Заказать</button>
+      </section>
+
+      <section class="features">
+        <h2 class="features__title">Коротко о нас:</h2>
+        <ul class="features__list">
+          <li class="features__item features__item--eco">Экологически чистые материалы</li>
+          <li class="features__item features__item--style">Скандинавский стиль по российской цене</li>
+          <li class="features__item features__item--likes">Увеличивает лайки на фотографиях</li>
+          <li class="features__item features__item--handmade">Связано вручную с любовью и умилением</li>
+          <li class="features__item features__item--support">Поддержка отечественного производителя</li>
+          <li class="features__item features__item--gifts">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <article class="review">
+          <h3 class="visually-hidden">Отзыв Анастасии:</h3>
+          <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <span class="review__author">Анастасия Красильникова</span>
+          <span class="review__contact">@misssssiskras</span>
+        </article>
+        <button class="reviews__control reviews__control--back" type="button">Назад</button>
+        <button class="reviews__control reviews__control--ahead" type="button">Вперёд</button>
+        <a class="btn" href="#">Написать</a>
+      </section>
+
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+
+        <div class="contacts__item">
+          <p class="contacts__variable">e-mail:</p>
+          <a href="mailto:info@mimimishkashop.ru" class="contacts__value">info@mimimishkashop.ru</a>
+        </div>
+
+        <div class="contacts__item">
+          <p class="contacts__variable">адрес:</p>
+          <p class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+        </div>
+
+        <a class="btn" href="#">Напишите нам</a>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="social-links">
+        <h2 class="social-links__title visually-hidden">Мы есть в социальных сетях:</h2>
+        <a href="#" class="social-link social-link--inst">instagram</a>
+        <a href="#" class="social-link social-link--fb">facebook</a>
+        <a href="#" class="social-link social-link--tw">twitter</a>
+      </section>
+      <div class="develop">
+        <p class="develop__text">Разработано <a href="https://htmlacademy.ru/intensive/adaptive" class="develop__link">в HTML Academy</a></p>
+      </div>
+    </footer>
+
+    <div class="popup popup--closed">
+      <h2 class="popup__title">Добавить в корзину</h2>
+      <p class="popup__text">Выберите размер:</p>
+      <form class="popup__form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="popup__label"><input class="popup__input" type="radio" name="size" value="s" checked>S</label>
+        <label class="popup__label"><input class="popup__input" type="radio" name="size" value="m">M</label>
+        <label class="popup__label"><input class="popup__input" type="radio" name="size" value="l">L</label>
+
+        <input  class="popup__btn" type="submit" name="popup" value="Добавить">
+      </form>
+    </div>
   </body>
 </html>
