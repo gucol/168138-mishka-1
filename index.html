@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initail-scale=1">
   </head>
   <body class="page">
     <header class="page-header">
@@ -20,7 +22,7 @@
           <li class="main-nav__item">
             <form class="search" action="https://echo.htmlacademy.ru/" method="get">
               <input class="search__input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
-              <button type="submit" class="search__btn">Найти</button>
+              <button type="submit" class="search__btn visually-hidden">Найти</button>
             </form>
           </li>
           <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
@@ -94,7 +96,9 @@
           <p class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
         </div>
 
-        <a class="btn" href="#">Напишите нам</a>
+        <div class="contacts__map"></div>
+
+        <a class="contacts__btn btn" href="#">Напишите нам</a>
       </section>
     </main>
 
@@ -114,9 +118,14 @@
       <h2 class="popup__title">Добавить в корзину</h2>
       <p class="popup__text">Выберите размер:</p>
       <form class="popup__form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="popup__label"><input class="popup__input" type="radio" name="size" value="s" checked>S</label>
-        <label class="popup__label"><input class="popup__input" type="radio" name="size" value="m">M</label>
-        <label class="popup__label"><input class="popup__input" type="radio" name="size" value="l">L</label>
+        <label for="s-radio" class="popup__label">S</label>
+        <input class="popup__input" id="s-radio" type="radio" name="size" value="s" checked>
+
+        <label for="m-radio" class="popup__label">M</label>
+        <input class="popup__input" id="m-radio" type="radio" name="size" value="m">
+
+        <label for="l-radio" class="popup__label">L</label>
+        <input class="popup__input" id="l-radio" type="radio" name="size" value="l">
 
         <input  class="popup__btn" type="submit" name="popup" value="Добавить">
       </form>
