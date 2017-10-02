@@ -33,7 +33,7 @@
       <h1 class="page-main__title">Вязание на заказ</h1>
       <p class="page-main__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form action="https://echo.htmlacademy.ru/" method="post" class="form-order">
-        <h2 class="form-order__title">Форма заказа</h2>
+        <h2 class="form-order__title visually-hidden">Форма заказа</h2>
         <fieldset class="form-order__container">
           <legend class="form-order__legend">Тип</legend>
 
@@ -48,34 +48,34 @@
           <legend class="form-order__legend">Цвет</legend>
 
           <input class="form-order__checkbox form-order__checkbox--checked" type="checkbox" name="white" id="white-check" checked>
-          <label for="white-check" class="form-order__label">Белый</label>
+          <label for="white-check" class="form-order__label form-order__label--checkbox">Белый</label>
 
           <input class="form-order__checkbox  form-order__checkbox--checked" type="checkbox" name="gray" id="gray-check" checked>
-          <label for="gray-check" class="form-order__label">Серый</label>
+          <label for="gray-check" class="form-order__label form-order__label--checkbox">Серый</label>
 
           <input class="form-order__checkbox" type="checkbox" name="tiffany" id="tiffany-check">
-          <label for="tiffany-check" class="form-order__label">«Тиффани»</label>
+          <label for="tiffany-check" class="form-order__label form-order__label--checkbox">«Тиффани»</label>
 
           <input class="form-order__checkbox" type="checkbox" name="black" id="black-check">
-          <label for="black-check" class="form-order__label">Черный</label>
+          <label for="black-check" class="form-order__label form-order__label--checkbox">Черный</label>
 
           <input class="form-order__checkbox" type="checkbox" name="pink" id="pink-check">
-          <label for="pink-check" class="form-order__label">Розовый</label>
+          <label for="pink-check" class="form-order__label form-order__label--checkbox">Розовый</label>
 
           <input class="form-order__checkbox" type="checkbox" name="orange" id="orange-check">
-          <label for="orange-check" class="form-order__label">Оранжевый</label>
+          <label for="orange-check" class="form-order__label form-order__label--checkbox">Оранжевый</label>
         </fieldset>
 
         <fieldset class="form-order__container">
           <legend class="form-order__legend">ФИО</legend>
 
-          <label for="name-field" class="form-order__label">Имя:</label>
+          <label for="name-field" class="form-order__label form-order__label--name">Имя:</label>
           <input class="form-order__field" type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
 
-          <label for="surname-field" class="form-order__label">Фамилия:</label>
+          <label for="surname-field" class="form-order__label form-order__label--name">Фамилия:</label>
           <input class="form-order__field" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию*" required>
 
-          <label for="patronymic-field" class="form-order__label">Отчество:</label>
+          <label for="patronymic-field" class="form-order__label form-order__label--name">Отчество:</label>
           <input class="form-order__field" type="text" name="patronymic" id="patronymic-field" placeholder="Отчество, если желаете">
         </fieldset>
 
