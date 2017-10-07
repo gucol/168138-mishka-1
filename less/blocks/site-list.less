@@ -1,0 +1,23 @@
+.site-list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: -2;
+    flex-basis: 400px;
+  }
+}
+
+.site-list__item {
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.site-list__item a {
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    padding-right: 21px;
+  }
+}
