@@ -1,4 +1,17 @@
 .page-footer {
   padding: 20px 30px 23px;
   background-color: @l-gray;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
