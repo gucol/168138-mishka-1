@@ -12,56 +12,71 @@
         <img class="page-header__logo-image" src="http://placehold.it/95x35" alt="Логотип магазина Mishka">
       </a>
 
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a>Каталог товаров</a>
-          </li>
-          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item">
-            <form class="search" action="https://echo.htmlacademy.ru/" method="get">
-              <input class="search__input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
-              <button type="submit" class="search__btn visually-hidden">Найти</button>
-            </form>
-          </li>
-          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__item site-list__item"><a>Каталог товаров</a></li>
+            <li class="main-nav__item site-list__item"><a href="form.html">Вязание на заказ</a></li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="main-nav__item user-list__item">
+              <form class="search" action="https://echo.htmlacademy.ru/" method="get">
+                <input class="search__input" type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+                <button type="submit" class="search__btn visually-hidden">Найти</button>
+              </form>
+            </li>
+            <li class="main-nav__item user-list__item"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
+          <ul class="main-nav__list action-list">
+            <li class="main-nav__item"><a href="#">Новые поступления</a></li>
+            <li class="main-nav__item"><a href="#">Распродажа</a></li>
+          </ul>
+          <p class="main-nav__text">Бесплатная доставка по России</p>
+        </div>
       </nav>
     </header>
 
     <main class="page-main">
       <section class="products">
         <h1 class="products__title">Каталог товаров</h1>
-        <article class="product">
-          <a href="#" class="product__img"><img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик"></a>
-          <a href="#" class="product__title"><h2>Зайчик-попрыгайчик</h2></a>
-          <span class="product__desc">Рост 30 см, вес 200 г</span>
-          <div class="product__inner">
-            <span class="product__price">1 200 руб.</span>
-            <button class="product__buy">Купить</button>
-          </div>
-        </article>
+        <div class="products__wrapper">
+          <article class="product">
+            <a href="#" class="product__img"><img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик"></a>
+            <div class="product__desc">
+              <a href="#" class="product__title"><h2>Зайчик-попрыгайчик</h2></a>
+              <span class="product__text">Рост 30 см, вес 200 г</span>
+              <div class="product__inner">
+                <span class="product__price">1 200 руб.</span>
+                <button class="product__buy">Купить</button>
+              </div>
+            </div>
+          </article>
 
-        <article class="product">
-          <a href="#" class="product__img"><img src="http://placehold.it/260x195" alt=""></a>
-          <a href="#" class="product__title"><h2>Корзинка для белья</h2></a>
-          <span class="product__desc">Диаметр 15 см, высота 10 см</span>
-          <div class="product__inner">
-            <span class="product__price">690 руб.</span>
-            <button class="product__buy">Купить</button>
-          </div>
-        </article>
+          <article class="product">
+            <a href="#" class="product__img"><img src="http://placehold.it/260x195" alt=""></a>
+            <div class="product__desc">
+              <a href="#" class="product__title"><h2>Корзинка для белья</h2></a>
+              <span class="product__text">Диаметр 15 см, высота 10 см</span>
+              <div class="product__inner">
+                <span class="product__price">690 руб.</span>
+                <button class="product__buy">Купить</button>
+              </div>
+            </div>
+          </article>
 
-        <article class="product">
-          <a href="#" class="product__img"><img src="http://placehold.it/260x195" alt=""></a>
-          <a href="#" class="product__title"><h2>Большая корзинка для игрушек</h2></a>
-          <span class="product__desc">Диаметр 30 см, высота 30 см</span>
-          <div class="product__inner">
-            <span class="product__price">1 500 руб.</span>
-            <button class="product__buy">Купить</button>
-          </div>
-        </article>
-
+          <article class="product">
+            <a href="#" class="product__img"><img src="http://placehold.it/260x195" alt=""></a>
+            <div class="product__desc">
+              <a href="#" class="product__title"><h2>Большая корзинка для игрушек</h2></a>
+              <span class="product__text">Диаметр 30 см, высота 30 см</span>
+              <div class="product__inner">
+                <span class="product__price">1 500 руб.</span>
+                <button class="product__buy">Купить</button>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="video">
@@ -70,8 +85,6 @@
         <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a href="#" class="btn video__btn">Сделать заказ</a>
       </section>
-
-
     </main>
 
     <footer class="page-footer">
@@ -81,6 +94,7 @@
         <a href="#" class="social-link social-link--fb">facebook</a>
         <a href="#" class="social-link social-link--tw">twitter</a>
       </section>
+
       <div class="develop">
         <p class="develop__text">Разработано <a href="https://htmlacademy.ru/intensive/adaptive" class="develop__link">в HTML Academy</a></p>
       </div>

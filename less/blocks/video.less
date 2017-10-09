@@ -1,42 +1,106 @@
 .video {
-  padding-bottom: 30px;
   margin-left: 9%;
   margin-right: 9%;
+  margin-bottom: 60px;
+  padding-bottom: 30px;
   text-align: center;
   border: 1px solid #ededed;
-  margin-bottom: 60px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin: 48px 6% 65px;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: wrap;
+    height: 412px;
+    margin: 57px 4% 105px;
+  }
 }
 
 .video__title {
   display: block;
-  padding-top: 28px;
-  padding-bottom: 28px;
-  padding-left: 60px;
   margin: 0;
   margin-right: 10%;
   margin-left: 10%;
-  font-size: 17px;
+  padding-top: 24px;
+  padding-bottom: 23px;
+  padding-left: 64px;
   font-weight: 700;
+  font-size: 17px;
   line-height: 24px;
   color: #000000;
   text-align: left;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 33px 35px 15px;
+    padding: 0;
+    padding-left: 75px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 20%;
+    margin: 97px 0 17px 78px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .video__box {
   max-width: 260px;
+  min-height: 150px;
   background: url("../img/video-mobile@1x.jpg") no-repeat;
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+    max-width: 675px;
+    min-height: 460px;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 685px;
+  }
 }
 
 .video__text {
-  margin: 35px 13% 28px;
+  margin: 22px 13% 25px 14%;
   font-size: 13px;
   line-height: 24px;
   color: #444444;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    margin: 18px 5% 35px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 22%;
+    margin-left: 78px;
+    margin-bottom: 45px;
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
 
 .video__btn {
   max-width: 190px;
   margin: 0 30px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 86%;
+    margin: 0 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 21%;
+    margin-left: 79px;
+  }
 }
